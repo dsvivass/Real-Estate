@@ -11,6 +11,8 @@ postgresql = {
     'pgdb'    : config('PGDB'),
 }
 
+print(postgresql)
+
 def get_engine(user, passwd, host, port, db):
     url = f"postgresql://{user}:{passwd}@{host}:{port}/{db}"
     if not database_exists(url):
