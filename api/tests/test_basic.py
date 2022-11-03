@@ -13,6 +13,5 @@ class TestBasic(TestCase):
         '''Test that the hello world route returns a 200 status code and a specific message'''
         
         request = self.client.get('/api/test')
-        response =json.loads(request.get_data())
         
         self.assertEqual(request.status_code, 200)        
