@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container__list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.container__list-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0 20px;
+}
+
+.container__list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 10px 20px;
+    background-color: rgb(238, 238, 238);
+    height: 20px;
+    /* border: 1px solid #000; */
+}
+
+.container__list-item-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0 20px;
+    color: #483d97 ;
+    flex: 3;
+}
+
+.container__list-item-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0 20px;
+    flex: 3;
+}
+
+.container__list-item-input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex: 1;
+}
+
+.container__list-item-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0 20px;
+    height: 30px;
+    border: #483d97 1px solid;
+    border-radius: 15px;
+    background-color: #473d97c5;
+    color: #fff;
+    font-weight: 100;
+}
+
+.container__list-item-input:focus {
+    outline: none;
+}
+
+.container__list-item-input::placeholder {
+    color: rgb(182, 182, 182);
+}
+
+.container__list-item-update {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0 20px;
+}
+
+.container__list-item-delete {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container__list-item-update {
+    background-color: #00ab83;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container__list-item-update:hover {
+    background-color: #fff;
+    color: #00ab83;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container__list-item-delete:hover {
+    background-color: #fff;
+    color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
