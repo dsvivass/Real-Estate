@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "92ac88fd-b012-4563-9447-521ec8076fc1",
+		"name": "voyansi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23995556"
+	},
+	"item": [
+		{
+			"name": "rooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/rooms",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rooms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":  \"Presidential\",\n    \"occupant\": \"Daniel\",\n    \"number\": 103\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/rooms",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rooms",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"occupant\": \"Juan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/rooms/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rooms",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"occupant\": \"Juan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/rooms/15",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms",
+						"15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

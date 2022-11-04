@@ -1,0 +1,112 @@
+.topbar {
+    height: 94.89px;
+    width: 100vw;
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    background-image: linear-gradient(to right, #ffffff 0%, #483d97 50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    z-index: 5;
+    font-family: 'Roboto', sans-serif;
+
+    --custom-color: #F8F9FC;
+    --custom-gap: 14px;
+    --custom-font-style: normal;
+    --custom-font-weight: 400;
+    --custom-font-size: 16px;
+    --custom-line-height: 150%;
+}
+
+.topbar__logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 14px; 
+}
+
+.topbar__logo-image {
+    height: 50px;
+}
+
+.topbar__logo-text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.9778px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.topbar__navigation {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    gap: var(--custom-gap)
+}
+
+.topbar__navigation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.topbar__navigation-item-text {
+    font-style: var(--custom-font-style);
+    font-weight: var(--custom-font-weight);
+    font-size: var(--custom-font-size);
+    line-height: var(--custom-line-height);
+    color: var(--custom-color);
+}
+
+.topbar__navigation-item-icon {
+    color: var(--custom-color);
+    font-size: 20px;
+}
+
+.topbar__create {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: var(--custom-gap)
+}
+
+.topbar__create-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.topbar__create-item-text {
+    font-style: var(--custom-font-style);
+    font-weight: var(--custom-font-weight);
+    font-size: var(--custom-font-size);
+    line-height: var(--custom-line-height);
+    color: var(--custom-color);
+}
+
+.topbar__create-item--special {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 28px;
+    gap: 12px;
+    height: 56.47px;
+    background: #ffffff;
+    border-radius: 120px;
+}
+
+.topbar__create-item--special-text {
+    font-style: var(--custom-font-style);
+    font-weight: var(--custom-font-weight);
+    font-size: var(--custom-font-size);
+    line-height: var(--custom-line-height);
+    color: #483d97;
+}
