@@ -36,3 +36,10 @@ class RoomView(Resource):
         
         return room_schema.dump(room), 200
     
+    def delete(self, id):
+        room = session.query(Room).get(id)
+        session.delete(room)
+        session.commit()
+        
+        return {"message": "Room deleted succesfully"}, 200
+    
