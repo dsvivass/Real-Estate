@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
+import githubImage from '../../assets/github.png'
 
 function Header() {
     return (
@@ -11,13 +12,13 @@ function Header() {
             </div>
             <div className="topbar__navigation">
                 <div className="topbar__navigation-item">
-                    <Link to='/' style={{ textDecoration: 'none' }}><p className="topbar__navigation-item-text">Rooms</p></Link>
+                    <Link to='/' style={{ textDecoration: 'none' }}><p className="topbar__navigation-item-text">Real estate</p></Link>
 
                 </div>
             </div>
             <div className="topbar__create">
                 <div className="topbar__create-item--special">
-                    <Link to='/create' style={{ textDecoration: 'none' }}><p className="topbar__create-item--special-text">+ Create</p></Link>
+                    <a href="https://github.com/dsvivass/Real-Estate" style={{ textDecoration: 'none' }} target='_blank' ><img src={githubImage} alt="" height={32} /></a>
 
                 </div>
             </div>

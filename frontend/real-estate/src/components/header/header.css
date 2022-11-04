@@ -95,7 +95,7 @@
 .topbar__create-item--special {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 14px 28px;
     gap: 12px;
     height: 56.47px;
